@@ -1,15 +1,21 @@
-const fs = require("fs");
+const { readFile } = require("fs").promises;
+const { dirname } = require("path");
 const pug = require("pug");
 
 const pluginPug = () => ({
   name: "pug",
   setup(build) {
     build.onLoad({ filter: /\.(jade|pug)$/ }, async (args) => {
-      let template = await fs.promises.readFile(args.path, "utf8");
+      const template = await readFile(args.path, "utf8");
 
-      const contents = pug.compile(template, { filename: args.path })();
+      const compiled = pug.compileClient(template, {
+        filename: args.path,
+        basedir: dirname(args.path),
+      });
 
-      return { contents, loader: "text" };
+      const contents = `${compiled}\n\nexport default template;`;
+
+      return { contents, loader: "js" };
     });
   },
 });

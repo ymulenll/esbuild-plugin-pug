@@ -1,11 +1,10 @@
 {
   "name": "esbuild-plugin-pug-examples",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "esbuild src/index.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "esbuild build.js"
   },
   "author": "",
   "license": "ISC",
@@ -13,6 +12,6 @@
     "esbuild": "^0.14.34"
   },
   "dependencies": {
-    "esbuild-plugin-pug": "0.0.7"
+    "@ymulenll/esbuild-plugin-pug": "0.0.2"
   }
 }

@@ -1,14 +1,21 @@
 {
-  "name": "esbuild-plugin-pug",
-  "version": "0.0.8",
-  "repository": "adamjberg/esbuild-plugin-pug",
+  "name": "@ymulenll/esbuild-plugin-pug",
+  "version": "0.0.2",
+  "repository": "ymulenll/esbuild-plugin-pug",
   "description": "esbuild plugin to load jade/pug files",
   "main": "src/index.js",
-  "author": "Adam Berg",
+  "author": "Yoelvis Mulen",
   "license": "ISC",
   "dependencies": {
     "pug": "^3.0.2"
   },
-  "files": ["src"],
-  "keywords": ["esbuild", "jade", "pug", "esbuild-plugin"]
+  "files": [
+    "src"
+  ],
+  "keywords": [
+    "esbuild",
+    "jade",
+    "pug",
+    "esbuild-plugin"
+  ]
 }
