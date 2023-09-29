@@ -1,6 +1,6 @@
 {
   "name": "esbuild-plugin-pug-examples",
-  "version": "0.0.2",
+  "private": true,
   "description": "",
   "main": "index.js",
   "scripts": {

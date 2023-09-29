@@ -1,5 +1,4 @@
 import compiled from "./index.pug";
-import pug from "pug";
 
 console.log(
   compiled({
