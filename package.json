@@ -1,6 +1,6 @@
 {
   "name": "@ymulenll/esbuild-plugin-pug",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "repository": "ymulenll/esbuild-plugin-pug",
   "description": "esbuild plugin to load jade/pug files",
   "main": "src/index.js",
