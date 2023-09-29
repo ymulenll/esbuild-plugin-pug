@@ -2,7 +2,7 @@
 
 Import plugin for [pug](https://pugjs.org/) (and jade) files for [esbuild](https://esbuild.github.io/)
 
-This plugin is based on [esbuild-plugin-pug](https://github.com/adamjberg/esbuild-plugin-pug), but instead of returning HTML, it returns the compiled function. This allows you to pass input data to the template, and it also supports includes in your templates.
+This plugin is based on [esbuild-plugin-pug](https://github.com/adamjberg/esbuild-plugin-pug), but instead of returning HTML, it returns the compiled function. This allows you to pass input data to the template, and it also supports [includes](https://pugjs.org/language/includes.html) in your templates.
 
 ## Install
 
